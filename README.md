@@ -5,7 +5,7 @@ Structured SVMs applied to graph learning (or CRFs in particular). I am using
 this code to carry out some experiments during my final degree project. A lot
 of inspiration has been drawn from [pystruct](http://github.com/amueller/pystruct)
 by Andreas Mueller. The code makes use of [Shogun](http://shogun-toolbox.org)'s
-structured learning framework [+ info](http://iglesiashogun.wordpress.com/).
+structured learning framework ([+ info](http://iglesiashogun.wordpress.com/)).
 
 Requirements
 ============
