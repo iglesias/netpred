@@ -33,3 +33,13 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Output pictures
+data*.png
+
+# Log files
+debug.log
+
+# Python serialization files
+X.p
+Y.p
