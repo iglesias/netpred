@@ -13,7 +13,7 @@ except ImportError:
 
 from shogun.Features	import RealMatrixFeatures
 from shogun.Library		import RealVector
-from shogun.Structure	import HMSVMLabels, ResultSet, DirectorStructuredModel, \
+from shogun.Structure	import SequenceLabels, ResultSet, DirectorStructuredModel, \
 								Sequence, StructuredModel
 
 class GridCRFStructuredModel(DirectorStructuredModel):
@@ -226,7 +226,7 @@ from modshogun			import MSG_DEBUG, MSG_INFO
 from shogun.Loss		import HingeLoss
 from shogun.Structure	import StructuredAccuracy
 
-Plot		= False
+Plot		= True
 SaveFigs	= False
 
 dummy = HingeLoss()
@@ -261,14 +261,14 @@ if len(sys.argv)>2 and sys.argv[2]=='load':
 	size = Y.shape[1]
 	n_samples = Y.shape[0]
 else:
-#	X, Y = toy.generate_blocks(n_samples, n_rows=size, n_cols=size)
-	X, Y = toy.generate_blocks_multinomial(n_samples, n_rows=size, n_cols=size)
+	X, Y = toy.generate_blocks(n_samples, n_rows=size, n_cols=size)
+#	X, Y = toy.generate_blocks_multinomial(n_samples, n_rows=size, n_cols=size)
 #	X, Y = toy.generate_checker(n_samples, n_rows=size, n_cols=size)
 
-# Some magic so HMSVMLabels can be used even though the labels here are square matrices
+# Some magic so SequenceLabels can be used even though the labels here are square matrices
 #Y_flat = Y.T.reshape(size**2, n_samples).T.reshape(-1) ## col-major, old bug
 Y_flat = Y.reshape(-1)	## row-major
-labels = HMSVMLabels(Y_flat, size**2, n_samples, n_states)
+labels = SequenceLabels(Y_flat, size**2, n_samples, n_states)
 
 # More magic so RealMatrixFeatures can be used even though the features here are tensors
 X_matl = np.zeros((n_features, 0))
