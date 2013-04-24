@@ -210,12 +210,14 @@ class GridCRFStructuredModel(DirectorStructuredModel):
 		pairwise_params[np.tri(self.n_states, dtype=np.bool)] = pairwise_flat
 		return (pairwise_params + pairwise_params.T - np.diag(np.diag(pairwise_params)))
 
+'''
 try:
 	from shogun.Structure	import PrimalMosekSOSVM
 except ImportError:
 	print "recompile shogun with mosek"
 	import sys
 	sys.exit(0)
+'''
 
 import toy_datasets			as toy
 import matplotlib.pyplot	as plt
@@ -225,6 +227,7 @@ import sys
 from modshogun			import MSG_DEBUG, MSG_INFO
 from shogun.Loss		import HingeLoss
 from shogun.Structure	import StructuredAccuracy
+from subgradient_sosvm	import SubgradientSOSVM, StochasticSubgradientSOSVM
 
 Plot		= True
 SaveFigs	= False
@@ -278,7 +281,9 @@ features = RealMatrixFeatures(X_matl, size**2, n_samples)
 
 loss = HingeLoss()
 model = GridCRFStructuredModel(features, labels)
-sosvm = PrimalMosekSOSVM(model, loss, labels)
+#sosvm = PrimalMosekSOSVM(model, loss, labels)
+#sosvm = SubgradientSOSVM(model, loss, labels, max_iterations=1000)
+sosvm = StochasticSubgradientSOSVM(model, loss, labels, max_iterations=1000, C=100)
 sosvm.train()
 dummy.io.message(MSG_DEBUG, '', 0, 'w =\n%s\n' % str(sosvm.get_w()))
 
