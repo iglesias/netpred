@@ -229,7 +229,7 @@ from shogun.Loss		import HingeLoss
 from shogun.Structure	import StructuredAccuracy
 from subgradient_sosvm	import SubgradientSOSVM, StochasticSubgradientSOSVM
 
-Plot		= True
+Plot		= False
 SaveFigs	= False
 
 dummy = HingeLoss()
@@ -282,15 +282,21 @@ features = RealMatrixFeatures(X_matl, size**2, n_samples)
 loss = HingeLoss()
 model = GridCRFStructuredModel(features, labels)
 #sosvm = PrimalMosekSOSVM(model, loss, labels)
-#sosvm = SubgradientSOSVM(model, loss, labels, max_iterations=1000)
-sosvm = StochasticSubgradientSOSVM(model, loss, labels, max_iterations=1000, C=100)
+sosvm = SubgradientSOSVM(model, loss, labels, debug_at_iteration=10)
+#sosvm = StochasticSubgradientSOSVM(model, loss, labels, debug_at_iteration=50, C=1)
 sosvm.train()
 dummy.io.message(MSG_DEBUG, '', 0, 'w =\n%s\n' % str(sosvm.get_w()))
 
 predicted = sosvm.apply()
 evaluator = StructuredAccuracy()
 acc = evaluator.evaluate(predicted, labels)
-dummy.io.message(MSG_INFO, '', 0, 'Accuracy: %4.f\n' % acc)
+dummy.io.message(MSG_INFO, '', 0, 'Accuracy: %.4f\n' % acc)
+
+# Model learnt by PrimalMosekSOSVM externally, it should produce accuracy of about 0.99
+sosvm.set_w(np.array([0, -5.9628, 0, 0, 8.1616e-2, -1.4641e1, 1.3547e-5]))
+predicted = sosvm.apply()
+acc = evaluator.evaluate(predicted, labels)
+dummy.io.message(MSG_INFO, '', 0, 'Hardcoded model\'s accuracy: %.4f\n' % acc)
 
 if Plot:
 	f, axarr = plt.subplots(2,5)
