@@ -35,7 +35,6 @@ class SubgradientSOSVM(LinearStructuredOutputMachine):
 			# Initialize the cumulative subgradient
 			subgrad = np.zeros(M)
 
-			# Online learning
 			for i in xrange(N):
 				# Loss-augmented inference for training example i
 				res = model.argmax(w, i, True)
