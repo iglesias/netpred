@@ -26,8 +26,6 @@ class SubgradientSOSVM(LinearStructuredOutputMachine):
 		M = model.get_dim()
 		# Number of training examples
 		N = model.get_features().get_num_vectors()
-		# Accuracy evaluator
-		evaluator = StructuredAccuracy()
 
 		# Initialize the weight vector
 		w = np.zeros(M)
@@ -43,17 +41,19 @@ class SubgradientSOSVM(LinearStructuredOutputMachine):
 					# Loss-augmented inference for training example i
 					res = model.argmax(w, i, True)
 					# Subgradient for training example i
-					subgrad += res.psi_pred.get() - res.psi_truth.get()
-
-				# Update weight vector
-				w -= self.learning_rate*(w - 1.0*self.C/N*subgrad)
+					subgrad = res.psi_truth.get() - res.psi_pred.get() - self.C*w
+					# Update weight vector
+					w += self.learning_rate*subgrad
 
 				if (t+1) % self.debug_at_iteration == 0:
-					# Check if the accuracy improves with the number of iterations
+					# Track the primal objective
+					obj = 0.
 					self.set_w(w)
-					predicted = self.apply()
-					accuracy = evaluator.evaluate(predicted, model.get_labels())
-					print '\t\t\tAccuracy: %.4f' % accuracy
+					for i in xrange(N):
+						res = model.argmax(w, i, True)
+						obj += max(0.0, res.delta - np.dot(w, res.psi_truth.get() - res.psi_pred.get()))
+					obj += self.C * np.sum(w**2)
+					print '\t\t\tPrimal objective: %.4f' % obj
 		except KeyboardInterrupt:
 			print '\t\t==== Execution stopped by user ===='
 
@@ -83,8 +83,6 @@ class StochasticSubgradientSOSVM(LinearStructuredOutputMachine):
 		M = model.get_dim()
 		# Number of training examples
 		N = model.get_features().get_num_vectors()
-		# Accuracy evaluator
-		evaluator = StructuredAccuracy()
 
 		# Initialize the weight vector
 		w = np.zeros(M)
@@ -100,17 +98,19 @@ class StochasticSubgradientSOSVM(LinearStructuredOutputMachine):
 				# Loss-augmented inference for training example i
 				res = model.argmax(w, i, True)
 				# Subgradient update
-				subgrad = res.psi_pred.get() - res.psi_truth.get()
-#				w -= self.learning_rate/(t+1.0)*(w - 1.0*self.C/N*subgrad)
-				w -= self.learning_rate*(w - self.C*subgrad)
+				subgrad = res.psi_truth.get() - res.psi_pred.get() - self.C*w
+				# Update weight vector
+				w += self.learning_rate*subgrad
+				self.set_w(w)
 
 				if (t+1) % self.debug_at_iteration == 0:
-					# Check if the accuracy improves with the number of iterations
-					self.set_w(w)
-					predicted = self.apply()
-					accuracy = evaluator.evaluate(predicted, model.get_labels())
-					print '\t\t\tAccuracy: %.4f' % accuracy
+					# Track the primal objective
+					obj= 0.
+					for i in xrange(N):
+						res = model.argmax(w, i, True)
+						obj += max(0., res.delta - np.dot(w, res.psi_truth.get() - res.psi_pred.get()))
+					obj += 1/2. * self.C * np.sum(w**2)
+					print '\t\t\tPrimal objective: %.4f' % obj
+
 		except KeyboardInterrupt:
 			print '\t\t==== Execution stopped by user ===='
-
-		self.set_w(w)
