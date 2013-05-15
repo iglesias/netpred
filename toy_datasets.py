@@ -313,6 +313,20 @@ def generate_crosses_latent(n_samples=5, noise=30):
     X = X
     return X, Y
 
+def generate_gaussian_smoothed_pattern(n_samples=5, noise=1.25, size=20, stdev=2.5):
+    np.random.seed(0)
+    # Memory pre-allocation
+    Y = np.zeros((n_samples, size, size), dtype=np.int32)
+    X = np.ones((n_samples, size, size, 2))
+    # Generate random smoothed patterns for the labels and noisy features
+    from scipy.ndimage.filters import gaussian_filter
+    for i in xrange(n_samples):
+        # Labels
+        Y[i] = np.round(gaussian_filter(np.random.rand(size, size), sigma=stdev, mode='mirror'))
+        # Features
+        t = np.random.rand(size, size)
+		X[i,:,:,0] = Y[i]*(1 - t**noise) + (1 - Y[i])*t**noise
+    return X,Y
 
 binary = [generate_blocks, generate_checker, generate_big_checker,
           generate_easy]
