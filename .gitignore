@@ -43,3 +43,9 @@ debug.log
 # Python serialization files
 X.p
 Y.p
+
+# svg and eps files
+*.svg
+*.eps
+*.pdf
+*.pdf_tex
