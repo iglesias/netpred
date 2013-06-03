@@ -11,6 +11,7 @@ import numpy
 import scipy.io
 import pickle
 import utils
+import time
 
 try:
 	from shogun.Structure	import PrimalMosekSOSVM
@@ -44,7 +45,7 @@ for _ in xrange(K):
 		num_noise_features))
 '''
 
-data_file = 'hmm_data_fold'
+data_file = 'hmm_gaussian_3_lb_4_ub_fold'
 for k in xrange(K):
 	data_dict = scipy.io.loadmat('/home/nando/workspace/hmsvmToolbox-0.2/src/hmsvm_toydata/%s_%d.mat' % (data_file, k), struct_as_record=False)
 
@@ -126,41 +127,6 @@ evaluator = StructuredAccuracy()
 # regularization values
 regularizers = [500, 50, 5, 0.5, 0.05]
 
-'''
-# create SO-SVMs using all data except the one corresponding to the k fold
-sosvms = []
-for k in xrange(K):
-	model = HMSVMModel(features_no_fold[k], labels_no_fold[k], SMT_TWO_STATE)
-	model.set_use_plifs(True)
-##	sosvms.append(DualLibQPBMSOSVM(model, loss, labels_no_fold[k], 0.0))
-	sosvms.append(PrimalMosekSOSVM(model, loss, labels_no_fold[k]))
-
-W = []
-
-for reg in regularizers:
-	print 'training SO-SVM with regularization %.2f' % reg
-	accuracies = []
-	w = []
-	for k in xrange(K):
-		sosvms[k].set_regularizer(reg)
-##		sosvms[k].set_lambda(regularizer)
-		print '\ton fold %d' % k,
-##		sosvms[k].io.set_loglevel(MSG_DEBUG)
-		sosvms[k].train()
-		w.append(sosvms[k].get_w())
-		prediction = sosvms[k].apply(models[k].get_features())
-		accuracy = evaluator.evaluate(prediction, models[k].get_labels())
-		print str(accuracy*100) + '%'
-		statistics = utils.get_statistics(models[k].get_labels(), prediction)
-		custom_accuracy = (100.*statistics['success_count'])/(num_fold_examples*example_len)
-		print '\t\t%d\t1s: (%5d, %5d)\t0s: (%5d, %5d)' % (custom_accuracy,
-				statistics['true_1_count'], statistics['pred_1_count'],
-				statistics['true_0_count'], statistics['pred_0_count'])
-		accuracies.append(accuracy)
-	print '\toverall success rate of ' + str(numpy.mean(accuracies)*100) + '%'
-	W.append(w)
-'''
-
 W = []
 
 for reg in regularizers:
@@ -173,10 +139,14 @@ for reg in regularizers:
 		sosvm = PrimalMosekSOSVM(model, loss, labels_no_fold[k])
 		sosvm.set_regularizer(reg)
 		print '\ton fold %d' % k,
-##		sosvm.io.set_loglevel(MSG_DEBUG)
+		sosvm.io.set_loglevel(MSG_DEBUG)
+		t0 = time.time()
 		sosvm.train()
+		print 'Elapsed: training took ' + str(time.time()-t0)
 		w.append(sosvm.get_w())
+		t1 = time.time()
 		prediction = sosvm.apply(models[k].get_features())
+		print 'Elapsed: prediction took ' + str(time.time()-t1)
 		accuracy = evaluator.evaluate(prediction, models[k].get_labels())
 		print str(accuracy*100) + '%'
 		statistics = utils.get_statistics(models[k].get_labels(), prediction)
