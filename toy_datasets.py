@@ -1,3 +1,12 @@
+'''
+Almost all the functions here have been taken from pystruct by Andreas Mueller,
+see https://github.com/amueller/pystruct. Some of them have been modified
+including some arguments to make them more flexible.
+
+Other new functions that were not in the repository above:
+		- Gaussian smoothed pattern.
+'''
+
 # these are some grid datasets to play with the algorithms.
 # some are solable with submodular constraints, some are not.
 # some need latent variables, some need directions.
@@ -110,7 +119,7 @@ def generate_bars(n_samples=5, noise=5, bars_size=3, total_size=8,
 def generate_square_with_hole(n_samples=5, noise=5, total_size=8):
     box_size = 3
     np.random.seed(0)
-    Y = np.zeros((n_samples, total_size, total_size), dtype=np.int)
+    Y = np.zeros((n_samples, total_size, total_size), dtype=np.int32)
     for i in xrange(n_samples):
         t_old, l_old = -10, -10
         t, l = np.random.randint(1, total_size - box_size, size=2)
@@ -187,16 +196,18 @@ def generate_blocks_multinomial(n_samples=20, noise=0.5, seed=None, n_rows=10, n
     if seed is not None:
         np.random.seed(seed)
     Y = np.zeros((n_samples, n_rows, n_cols, 3))
-    Y[:, :, :4, 0] = 1
-    Y[:, :, 4:8, 1] = 1
-    Y[:, :, 8:16, 2] = 1
+    for i in xrange(n_samples):
+        ridxs = np.random.permutation(range(3))
+        Y[i, :,   :4, ridxs[0]] = 1
+        Y[i, :,  4:8, ridxs[1]] = 1
+        Y[i, :, 8:16, ridxs[2]] = 1
     X = Y + noise * np.random.normal(size=Y.shape)
     Y = np.argmax(Y, axis=3).astype(np.int32)
     return X, Y
 
 
-def generate_checker_multinomial(n_samples=20, noise=1.5):
-    Y = -np.ones((n_samples, 10, 12, 3))
+def generate_checker_multinomial(n_samples=20, noise=1.5, size=12):
+    Y = -np.ones((n_samples, size, size, 3))
     Y[:, ::2, ::2, 0] = 1
     Y[:, 1::2, 1::2, 1] = 1
     Y[:, :, :, 2] = 0
@@ -325,7 +336,7 @@ def generate_gaussian_smoothed_pattern(n_samples=5, noise=1.25, size=20, stdev=2
         Y[i] = np.round(gaussian_filter(np.random.rand(size, size), sigma=stdev, mode='mirror'))
         # Features
         t = np.random.rand(size, size)
-		X[i,:,:,0] = Y[i]*(1 - t**noise) + (1 - Y[i])*t**noise
+        X[i,:,:,0] = Y[i]*(1 - t**noise) + (1 - Y[i])*t**noise
     return X,Y
 
 binary = [generate_blocks, generate_checker, generate_big_checker,
