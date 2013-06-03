@@ -25,6 +25,27 @@ class MLHMM:
 		self.feature_scores = numpy.zeros((self.num_features, self.num_free_states,
 				self.num_plif_nodes))
 
+	'''
+	def __init__(self, transition_scores, feature_scores, limits):
+		# Setup of the HMM
+		self.model = HMSVMModel(None, None, SMT_TWO_STATE, 0, True)
+		self.num_states = 4
+		self.num_free_states = feature_scores.shape[1]
+		self.num_features = feature_scores.shape[0]
+		self.num_plif_nodes = limits.shape[0]
+		# Model parameters
+		self.transition_scores = transition_scores
+		self.feature_scores = feature_scores
+	'''
+
+	@property
+	def transition_scores(self):
+		return self.transition_scores
+
+	@property
+	def feature_scores(self):
+		return self.feature_scores
+
 	def train(self):
 		'''
 		Estimate model parameters from data.
