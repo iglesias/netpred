@@ -2,7 +2,7 @@ function [objective, W1, W2] = sosvm_objective(C)
 %
 %   sosvm_objective(C)
 %
-%           C           regularizer
+%           C           regularization
 %
 
 % \mathcal{X} = \mathbb{R}

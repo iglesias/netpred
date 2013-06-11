@@ -1,0 +1,157 @@
+- the regularizer is 0.005
+	data with 0% of total labels distorted
+			training accuracy:      98.048%
+							1s: ( 9775,  9769)      0s: (15225, 15231)
+			test accuracy:          97.212%
+							1s: (10198, 10287)      0s: (14802, 14713)
+	data with 10% of total labels distorted
+	        training accuracy:      96.068%
+			                1s: (10271, 10372)      0s: (14729, 14628)
+	        test accuracy:          95.068%
+			                1s: (10621, 10360)      0s: (14379, 14640)
+	data with 20% of total labels distorted
+	        training accuracy:      93.256%
+			                1s: ( 9329,  9077)      0s: (15671, 15923)
+	        test accuracy:          92.268%
+			                1s: ( 9235,  9026)      0s: (15765, 15974)
+	data with 30% of total labels distorted
+	        training accuracy:      90.26%
+			                1s: ( 9805,  9554)      0s: (15195, 15446)
+	        test accuracy:          85.132%
+			                1s: (10203,  9804)      0s: (14797, 15196)
+	data with 40% of total labels distorted
+	        training accuracy:      75.74%
+			                1s: (10272,  8963)      0s: (14728, 16037)
+	        test accuracy:          70.888%
+			                1s: (11245,  9417)      0s: (13755, 15583)
+
+- the regularizer is 0.05
+	data with 0% of total labels distorted
+			training accuracy:      98.02%
+							1s: ( 9775,  9760)      0s: (15225, 15240)
+			test accuracy:          97.136%
+							1s: (10198, 10256)      0s: (14802, 14744)
+	data with 10% of total labels distorted
+			training accuracy:      96.112%
+							1s: (10271, 10377)      0s: (14729, 14623)
+			test accuracy:          95.008%
+							1s: (10621, 10379)      0s: (14379, 14621)
+	data with 20% of total labels distorted
+			training accuracy:      93.316%
+							1s: ( 9329,  9078)      0s: (15671, 15922)
+			test accuracy:          92.396%
+							1s: ( 9235,  9030)      0s: (15765, 15970)
+	data with 30% of total labels distorted
+			training accuracy:      90.272%
+							1s: ( 9805,  9541)      0s: (15195, 15459)
+			test accuracy:          84.652%
+							1s: (10203,  9784)      0s: (14797, 15216)
+	data with 40% of total labels distorted
+	        training accuracy:      74.388%
+			                1s: (10272,  8231)      0s: (14728, 16769)
+	        test accuracy:          70.472%
+			                1s: (11245,  8519)      0s: (13755, 16481)
+
+- the regularizer is 0.5
+	data with 0% of total labels distorted
+			training accuracy:      97.748%
+							1s: ( 9775,  9774)      0s: (15225, 15226)
+			test accuracy:          97.232%
+							1s: (10198, 10206)      0s: (14802, 14794)
+	data with 10% of total labels distorted
+			training accuracy:      95.976%
+							1s: (10271, 10391)      0s: (14729, 14609)
+			test accuracy:          95.048%
+							1s: (10621, 10425)      0s: (14379, 14575)
+	data with 20% of total labels distorted
+			training accuracy:      93.08%
+							1s: ( 9329,  9031)      0s: (15671, 15969)
+			test accuracy:          92.156%
+							1s: ( 9235,  9078)      0s: (15765, 15922)
+	data with 30% of total labels distorted
+			training accuracy:      89.816%
+							1s: ( 9805,  9595)      0s: (15195, 15405)
+			test accuracy:          84.2%
+							1s: (10203,  9929)      0s: (14797, 15071)
+
+- the regularizer is 5
+	data with 0% of total labels distorted
+			training accuracy:      97.452%
+							1s: ( 9775,  9748)      0s: (15225, 15252)
+			test accuracy:          97.036%
+							1s: (10198, 10219)      0s: (14802, 14781)
+	data with 10% of total labels distorted
+			training accuracy:      95.96%
+							1s: (10271, 10339)      0s: (14729, 14661)
+			test accuracy:          95.22%
+							1s: (10621, 10422)      0s: (14379, 14578)
+	data with 20% of total labels distorted
+			training accuracy:      93.052%
+							1s: ( 9329,  8996)      0s: (15671, 16004)
+			test accuracy:          90.684%
+							1s: ( 9235,  8708)      0s: (15765, 16292)
+	data with 30% of total labels distorted
+			training accuracy:      88.472%
+							1s: ( 9805,  9439)      0s: (15195, 15561)
+			test accuracy:          83.004%
+							1s: (10203,  9738)      0s: (14797, 15262)
+	data with 40% of total labels distorted
+	        training accuracy:      69.388%
+			                1s: (10272,  6003)      0s: (14728, 18997)
+	        test accuracy:          66.496%
+			                1s: (11245,  6275)      0s: (13755, 18725)
+
+- the regularizer is 50
+	data with 0% of total labels distorted
+			training accuracy:      97.176%
+							1s: ( 9775,  9655)      0s: (15225, 15345)
+			test accuracy:          97.032%
+							1s: (10198, 10100)      0s: (14802, 14900)
+	data with 10% of total labels distorted
+			training accuracy:      95.572%
+							1s: (10271, 10128)      0s: (14729, 14872)
+			test accuracy:          94.084%
+							1s: (10621, 10286)      0s: (14379, 14714)
+	data with 20% of total labels distorted
+			training accuracy:      91.016%
+							1s: ( 9329,  8755)      0s: (15671, 16245)
+			test accuracy:          88.928%
+							1s: ( 9235,  8167)      0s: (15765, 16833)
+	data with 30% of total labels distorted
+			training accuracy:      83.092%
+							1s: ( 9805,  7790)      0s: (15195, 17210)
+			test accuracy:          77.896%
+							1s: (10203,  7791)      0s: (14797, 17209)
+	data with 40% of total labels distorted
+	        training accuracy:      58.9%
+			                1s: (10272,    13)      0s: (14728, 24987)
+	        test accuracy:          55.02%
+			                1s: (11245,     0)      0s: (13755, 25000)
+
+- the regularizer is 500
+	data with 0% of total labels distorted
+			training accuracy:      93.0%
+							1s: ( 9775,  8711)      0s: (15225, 16289)
+			test accuracy:          91.46%
+							1s: (10198,  8791)      0s: (14802, 16209)
+	data with 10% of total labels distorted
+			training accuracy:      87.288%
+							1s: (10271,  8019)      0s: (14729, 16981)
+			test accuracy:          85.148%
+							1s: (10621,  7996)      0s: (14379, 17004)
+	data with 20% of total labels distorted
+			training accuracy:      63.3%
+							1s: ( 9329,   168)      0s: (15671, 24832)
+			test accuracy:          63.42%
+							1s: ( 9235,   116)      0s: (15765, 24884)
+	data with 30% of total labels distorted
+			training accuracy:      60.78%
+							1s: ( 9805,     0)      0s: (15195, 25000)
+			test accuracy:          59.188%
+							1s: (10203,     0)      0s: (14797, 25000)
+	data with 40% of total labels distorted
+	        training accuracy:      58.912%
+			                1s: (10272,     0)      0s: (14728, 25000)
+	        test accuracy:          55.02%
+			                1s: (11245,     0)      0s: (13755, 25000)
+
