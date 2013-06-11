@@ -20,6 +20,11 @@ with the current state you need to compile Shogun with Mosek support. This
 dependency should be easy to remove though by using any of the bundle methods
 for SSVMs present in Shogun.
 
+There are a couple of subgradient methods implemented in the graph directory.
+Using this, you do not need Mosek any more. I have only tested them in the
+graph learning task, but in principle they should work fine for label
+sequence learning as well.
+
 Apart from Shogun dependencies, you need cvxopt for the linear programming
 relaxation used to solve the argmax in graph learning.
 
