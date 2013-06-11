@@ -1,8 +1,9 @@
 Cross-validation error
 ======================
 
-| Regularization strength | Proportion of distorted labels             |
-|-------------------------|:------------------------------------------:|
+Along the rows varies the regularization strength, and along the columns the proportion of distorted
+labels.
+
 |                         | 0 %    | 10 %   | 20 %   | 30 %   | 40 %   |
 |:-----------------------:|:------:|:------:|:------:|:------:|:------:|
 |                 500     | 87.624 | 80.14  | 62.764 | 60.78  | 58.912 |
