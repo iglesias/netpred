@@ -241,9 +241,9 @@ from shogun.Loss		import HingeLoss
 from shogun.Structure	import StructuredAccuracy
 from subgradient_sosvm	import SubgradientSOSVM, StochasticSubgradientSOSVM
 
-Plot			= False
-SaveFigs		= True
-SaveLatexFigs	= True
+Plot			= True
+SaveFigs		= False
+SaveLatexFigs	= False
 
 dummy = HingeLoss()
 if len(sys.argv)>1:
