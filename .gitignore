@@ -47,5 +47,4 @@ Y.p
 # svg and eps files
 *.svg
 *.eps
-*.pdf
 *.pdf_tex

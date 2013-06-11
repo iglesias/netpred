@@ -1,0 +1,665 @@
+[nando@archcarbon hmsvm (develop)]$ ./hmsvm_xval_full_distort.py
+>>>> data with 0% of total labels distorted
+training SO-SVM with regularization 500.000000
+        on fold 0 Elapsed: training took 100.441257954
+		Elapsed: prediction took 0.143121004105
+		86.22%
+		                86.22   1s: ( 2349,  1718)      0s: ( 2651,  3282)
+	        on fold 1 Elapsed: training took 106.238044024
+			Elapsed: prediction took 0.141738891602
+			82.36%
+			                82.36   1s: ( 2341,  1529)      0s: ( 2659,  3471)
+	        on fold 2 Elapsed: training took 91.320636034
+			Elapsed: prediction took 0.14306306839
+			90.64%
+			                90.64   1s: ( 1866,  1492)      0s: ( 3134,  3508)
+	        on fold 3 Elapsed: training took 117.686735868
+			Elapsed: prediction took 0.145600795746
+			91.5%
+			                91.50   1s: ( 1623,  1420)      0s: ( 3377,  3580)
+	        on fold 4 Elapsed: training took 116.805685997
+			Elapsed: prediction took 0.140712976456
+			87.4%
+			                87.40   1s: ( 1596,  1302)      0s: ( 3404,  3698)
+	        overall success rate of 87.624%
+			training SO-SVM with regularization 50.000000
+			        on fold 0 Elapsed: training took 172.51969099
+					Elapsed: prediction took 0.143085956573
+					94.66%
+					                94.66   1s: ( 2349,  2400)      0s: ( 2651,  2600)
+	        on fold 1 Elapsed: training took 171.091989994
+			Elapsed: prediction took 0.141901016235
+			96.8%
+			                96.80   1s: ( 2341,  2325)      0s: ( 2659,  2675)
+	        on fold 2 Elapsed: training took 179.85296011
+			Elapsed: prediction took 0.14107298851
+			97.72%
+			                97.72   1s: ( 1866,  1836)      0s: ( 3134,  3164)
+	        on fold 3 Elapsed: training took 214.275142908
+			Elapsed: prediction took 0.140702009201
+			96.1%
+			                96.10   1s: ( 1623,  1608)      0s: ( 3377,  3392)
+	        on fold 4 Elapsed: training took 194.546429873
+			Elapsed: prediction took 0.147449016571
+			94.0%
+			                94.00   1s: ( 1596,  1556)      0s: ( 3404,  3444)
+	        overall success rate of 95.856%
+			training SO-SVM with regularization 5.000000
+			        on fold 0 Elapsed: training took 253.031236887
+					Elapsed: prediction took 0.144481897354
+					94.36%
+					                94.36   1s: ( 2349,  2471)      0s: ( 2651,  2529)
+	        on fold 1 Elapsed: training took 348.861084938
+			Elapsed: prediction took 0.140914201736
+			96.68%
+			                96.68   1s: ( 2341,  2301)      0s: ( 2659,  2699)
+	        on fold 2 Elapsed: training took 341.859596968
+			Elapsed: prediction took 0.141968011856
+			97.1%
+			                97.10   1s: ( 1866,  1805)      0s: ( 3134,  3195)
+	        on fold 3 Elapsed: training took 330.484570026
+			Elapsed: prediction took 0.141501903534
+			95.84%
+			                95.84   1s: ( 1623,  1625)      0s: ( 3377,  3375)
+	        on fold 4 Elapsed: training took 351.59155488
+			Elapsed: prediction took 0.141747951508
+			95.12%
+			                95.12   1s: ( 1596,  1576)      0s: ( 3404,  3424)
+	        overall success rate of 95.82%
+			training SO-SVM with regularization 0.500000
+			        on fold 0 Elapsed: training took 411.036077023
+					Elapsed: prediction took 0.1424741745
+					94.78%
+					                94.78   1s: ( 2349,  2452)      0s: ( 2651,  2548)
+	        on fold 1 Elapsed: training took 464.814321041
+			Elapsed: prediction took 0.141601800919
+			96.44%
+			                96.44   1s: ( 2341,  2347)      0s: ( 2659,  2653)
+	        on fold 2 Elapsed: training took 461.069982052
+			Elapsed: prediction took 0.150360107422
+			97.62%
+			                97.62   1s: ( 1866,  1831)      0s: ( 3134,  3169)
+	        on fold 3 Elapsed: training took 537.815490007
+			Elapsed: prediction took 0.14012503624
+			96.4%
+			                96.40   1s: ( 1623,  1619)      0s: ( 3377,  3381)
+	        on fold 4 Elapsed: training took 557.35927701
+			Elapsed: prediction took 0.139799118042
+			95.7%
+			                95.70   1s: ( 1596,  1555)      0s: ( 3404,  3445)
+	        overall success rate of 96.188%
+			training SO-SVM with regularization 0.050000
+			        on fold 0 Elapsed: training took 474.690850019
+					Elapsed: prediction took 0.143505096436
+					94.54%
+					                94.54   1s: ( 2349,  2468)      0s: ( 2651,  2532)
+	        on fold 1 Elapsed: training took 820.854110003
+			Elapsed: prediction took 0.298480033875
+			96.32%
+			                96.32   1s: ( 2341,  2331)      0s: ( 2659,  2669)
+	        on fold 2 Elapsed: training took 672.74011898
+			Elapsed: prediction took 0.142036914825
+			97.66%
+			                97.66   1s: ( 1866,  1815)      0s: ( 3134,  3185)
+	        on fold 3 Elapsed: training took 773.282190084
+			Elapsed: prediction took 0.146039009094
+			96.8%
+			                96.80   1s: ( 1623,  1581)      0s: ( 3377,  3419)
+	        on fold 4 Elapsed: training took 586.701514006
+			Elapsed: prediction took 0.142639875412
+			95.46%
+			                95.46   1s: ( 1596,  1547)      0s: ( 3404,  3453)
+	        overall success rate of 96.156%
+			training SO-SVM with regularization 0.005000
+			        on fold 0 Elapsed: training took 485.703959942
+					Elapsed: prediction took 0.147877931595
+					94.88%
+					                94.88   1s: ( 2349,  2455)      0s: ( 2651,  2545)
+	        on fold 1 Elapsed: training took 599.60277915
+			Elapsed: prediction took 0.143936872482
+			96.04%
+			                96.04   1s: ( 2341,  2319)      0s: ( 2659,  2681)
+	        on fold 2 Elapsed: training took 786.979254961
+			Elapsed: prediction took 0.142308950424
+			97.54%
+			                97.54   1s: ( 1866,  1819)      0s: ( 3134,  3181)
+	        on fold 3 Elapsed: training took 650.977285862
+			Elapsed: prediction took 0.143209934235
+			96.8%
+			                96.80   1s: ( 1623,  1599)      0s: ( 3377,  3401)
+	        on fold 4 Elapsed: training took 602.823225975
+			Elapsed: prediction took 0.142663955688
+			95.14%
+			                95.14   1s: ( 1596,  1563)      0s: ( 3404,  3437)
+	        overall success rate of 96.08%
+			>>>> data with 10% of total labels distorted
+			training SO-SVM with regularization 500.000000
+			        on fold 0 Elapsed: training took 90.8819730282
+					Elapsed: prediction took 0.141654014587
+					77.56%
+					                77.56   1s: ( 2181,  1225)      0s: ( 2819,  3775)
+	        on fold 1 Elapsed: training took 94.9832251072
+			Elapsed: prediction took 0.143056154251
+			81.28%
+			                81.28   1s: ( 1899,  1199)      0s: ( 3101,  3801)
+	        on fold 2 Elapsed: training took 74.226293087
+			Elapsed: prediction took 0.141077041626
+			76.36%
+			                76.36   1s: ( 2271,  1181)      0s: ( 2729,  3819)
+	        on fold 3 Elapsed: training took 82.5915141106
+			Elapsed: prediction took 0.143191814423
+			81.28%
+			                81.28   1s: ( 2177,  1335)      0s: ( 2823,  3665)
+	        on fold 4 Elapsed: training took 102.53727293
+			Elapsed: prediction took 0.141739845276
+			84.22%
+			                84.22   1s: ( 1743,  1254)      0s: ( 3257,  3746)
+	        overall success rate of 80.14%
+			training SO-SVM with regularization 50.000000
+			        on fold 0 Elapsed: training took 159.402477026
+					Elapsed: prediction took 0.143077135086
+					93.14%
+					                93.14   1s: ( 2181,  2122)      0s: ( 2819,  2878)
+	        on fold 1 Elapsed: training took 173.560556173
+			Elapsed: prediction took 0.142257928848
+			93.42%
+			                93.42   1s: ( 1899,  1864)      0s: ( 3101,  3136)
+	        on fold 2 Elapsed: training took 207.845475912
+			Elapsed: prediction took 0.143023014069
+			93.8%
+			                93.80   1s: ( 2271,  2205)      0s: ( 2729,  2795)
+	        on fold 3 Elapsed: training took 147.470692158
+			Elapsed: prediction took 0.142758846283
+			93.66%
+			                93.66   1s: ( 2177,  2044)      0s: ( 2823,  2956)
+	        on fold 4 Elapsed: training took 311.251876116
+			Elapsed: prediction took 0.142220020294
+			94.04%
+			                94.04   1s: ( 1743,  1847)      0s: ( 3257,  3153)
+	        overall success rate of 93.612%
+			training SO-SVM with regularization 5.000000
+			        on fold 0 Elapsed: training took 351.434567928
+					Elapsed: prediction took 0.142820119858
+					94.24%
+					                94.24   1s: ( 2181,  2213)      0s: ( 2819,  2787)
+	        on fold 1 Elapsed: training took 391.905754089
+			Elapsed: prediction took 0.142061948776
+			93.3%
+			                93.30   1s: ( 1899,  1898)      0s: ( 3101,  3102)
+	        on fold 2 Elapsed: training took 365.093612909
+			Elapsed: prediction took 0.141961097717
+			94.62%
+			                94.62   1s: ( 2271,  2312)      0s: ( 2729,  2688)
+	        on fold 3 Elapsed: training took 345.335236073
+			Elapsed: prediction took 0.144105195999
+			94.96%
+			                94.96   1s: ( 2177,  2073)      0s: ( 2823,  2927)
+	        on fold 4 Elapsed: training took 311.069081068
+			Elapsed: prediction took 0.141846895218
+			94.32%
+			                94.32   1s: ( 1743,  1809)      0s: ( 3257,  3191)
+	        overall success rate of 94.288%
+			training SO-SVM with regularization 0.500000
+			        on fold 0 Elapsed: training took 564.560375929
+					Elapsed: prediction took 0.142747879028
+					94.6%
+					                94.60   1s: ( 2181,  2269)      0s: ( 2819,  2731)
+	        on fold 1 Elapsed: training took 595.675030947
+			Elapsed: prediction took 0.147013902664
+			93.94%
+			                93.94   1s: ( 1899,  1924)      0s: ( 3101,  3076)
+	        on fold 2 Elapsed: training took 618.334022999
+			Elapsed: prediction took 0.143223047256
+			94.84%
+			                94.84   1s: ( 2271,  2331)      0s: ( 2729,  2669)
+	        on fold 3 Elapsed: training took 484.470010042
+			Elapsed: prediction took 0.143384933472
+			95.68%
+			                95.68   1s: ( 2177,  2109)      0s: ( 2823,  2891)
+	        on fold 4 Elapsed: training took 631.181236029
+			Elapsed: prediction took 0.142549037933
+			94.72%
+			                94.72   1s: ( 1743,  1779)      0s: ( 3257,  3221)
+	        overall success rate of 94.756%
+			training SO-SVM with regularization 0.050000
+			        on fold 0 Elapsed: training took 745.606893063
+					Elapsed: prediction took 0.142946958542
+					94.94%
+					                94.94   1s: ( 2181,  2232)      0s: ( 2819,  2768)
+	        on fold 1 Elapsed: training took 691.97182703
+			Elapsed: prediction took 0.142044067383
+			94.24%
+			                94.24   1s: ( 1899,  1903)      0s: ( 3101,  3097)
+	        on fold 2 Elapsed: training took 521.839781046
+			Elapsed: prediction took 0.146501064301
+			94.74%
+			                94.74   1s: ( 2271,  2332)      0s: ( 2729,  2668)
+	        on fold 3 Elapsed: training took 622.578856945
+			Elapsed: prediction took 0.143500089645
+			94.9%
+			                94.90   1s: ( 2177,  2056)      0s: ( 2823,  2944)
+	        on fold 4 Elapsed: training took 662.139610052
+			Elapsed: prediction took 0.142508029938
+			95.02%
+			                95.02   1s: ( 1743,  1744)      0s: ( 3257,  3256)
+	        overall success rate of 94.768%
+			training SO-SVM with regularization 0.005000
+			        on fold 0 Elapsed: training took 696.321917057
+					Elapsed: prediction took 0.142634153366
+					95.08%
+					                95.08   1s: ( 2181,  2245)      0s: ( 2819,  2755)
+	        on fold 1 Elapsed: training took 731.554835081
+			Elapsed: prediction took 0.141981124878
+			94.26%
+			                94.26   1s: ( 1899,  1904)      0s: ( 3101,  3096)
+	        on fold 2 Elapsed: training took 553.46942997
+			Elapsed: prediction took 0.147305011749
+			94.88%
+			                94.88   1s: ( 2271,  2349)      0s: ( 2729,  2651)
+	        on fold 3 Elapsed: training took 561.801203012
+			Elapsed: prediction took 0.147150039673
+			95.56%
+			                95.56   1s: ( 2177,  2095)      0s: ( 2823,  2905)
+	        on fold 4 Elapsed: training took 810.178524017
+			Elapsed: prediction took 0.143254995346
+			95.1%
+			                95.10   1s: ( 1743,  1748)      0s: ( 3257,  3252)
+	        overall success rate of 94.976%
+			>>>> data with 20% of total labels distorted
+			training SO-SVM with regularization 500.000000
+			        on fold 0 Elapsed: training took 82.4909000397
+					Elapsed: prediction took 0.143228054047
+					63.62%
+					                63.62   1s: ( 1821,     2)      0s: ( 3179,  4998)
+	        on fold 1 Elapsed: training took 74.4696741104
+			Elapsed: prediction took 0.144618988037
+			63.94%
+			                63.94   1s: ( 1811,    10)      0s: ( 3189,  4990)
+	        on fold 2 Elapsed: training took 73.1223890781
+			Elapsed: prediction took 0.145566940308
+			60.46%
+			                60.46   1s: ( 1977,     0)      0s: ( 3023,  5000)
+	        on fold 3 Elapsed: training took 81.1038630009
+			Elapsed: prediction took 0.143704891205
+			63.26%
+			                63.26   1s: ( 1840,     7)      0s: ( 3160,  4993)
+	        on fold 4 Elapsed: training took 104.104491949
+			Elapsed: prediction took 0.141577005386
+			62.54%
+			                62.54   1s: ( 1880,     7)      0s: ( 3120,  4993)
+	        overall success rate of 62.764%
+			training SO-SVM with regularization 50.000000
+			        on fold 0 Elapsed: training took 146.131620884
+					Elapsed: prediction took 0.143987894058
+					88.16%
+					                88.16   1s: ( 1821,  1679)      0s: ( 3179,  3321)
+	        on fold 1 Elapsed: training took 157.193058014
+			Elapsed: prediction took 0.147541999817
+			89.0%
+			                89.00   1s: ( 1811,  1779)      0s: ( 3189,  3221)
+	        on fold 2 Elapsed: training took 179.574353933
+			Elapsed: prediction took 0.148743152618
+			85.12%
+			                85.12   1s: ( 1977,  1533)      0s: ( 3023,  3467)
+	        on fold 3 Elapsed: training took 164.839520931
+			Elapsed: prediction took 0.144480228424
+			86.28%
+			                86.28   1s: ( 1840,  1662)      0s: ( 3160,  3338)
+	        on fold 4 Elapsed: training took 183.18949604
+			Elapsed: prediction took 0.143877983093
+			88.34%
+			                88.34   1s: ( 1880,  1719)      0s: ( 3120,  3281)
+	        overall success rate of 87.38%
+			training SO-SVM with regularization 5.000000
+			        on fold 0 Elapsed: training took 316.72479105
+					Elapsed: prediction took 0.144041061401
+					88.86%
+					                88.86   1s: ( 1821,  1824)      0s: ( 3179,  3176)
+	        on fold 1 Elapsed: training took 351.552751064
+			Elapsed: prediction took 0.144201993942
+			90.88%
+			                90.88   1s: ( 1811,  2045)      0s: ( 3189,  2955)
+	        on fold 2 Elapsed: training took 348.826379061
+			Elapsed: prediction took 0.143578052521
+			90.26%
+			                90.26   1s: ( 1977,  1778)      0s: ( 3023,  3222)
+	        on fold 3 Elapsed: training took 340.534447908
+			Elapsed: prediction took 0.143415927887
+			88.22%
+			                88.22   1s: ( 1840,  1829)      0s: ( 3160,  3171)
+	        on fold 4 Elapsed: training took 338.912746906
+			Elapsed: prediction took 0.142023086548
+			91.18%
+			                91.18   1s: ( 1880,  1841)      0s: ( 3120,  3159)
+	        overall success rate of 89.88%
+			training SO-SVM with regularization 0.500000
+			        on fold 0 Elapsed: training took 530.110673904
+					Elapsed: prediction took 0.148249864578
+					89.6%
+					                89.60   1s: ( 1821,  1761)      0s: ( 3179,  3239)
+	        on fold 1 Elapsed: training took 412.139895916
+			Elapsed: prediction took 0.143882989883
+			92.02%
+			                92.02   1s: ( 1811,  2054)      0s: ( 3189,  2946)
+	        on fold 2 Elapsed: training took 406.097240925
+			Elapsed: prediction took 0.147107124329
+			91.08%
+			                91.08   1s: ( 1977,  1781)      0s: ( 3023,  3219)
+	        on fold 3 Elapsed: training took 590.414852142
+			Elapsed: prediction took 0.146970033646
+			88.88%
+			                88.88   1s: ( 1840,  1840)      0s: ( 3160,  3160)
+	        on fold 4 Elapsed: training took 716.151202917
+			Elapsed: prediction took 0.148989915848
+			90.46%
+			                90.46   1s: ( 1880,  1837)      0s: ( 3120,  3163)
+	        overall success rate of 90.408%
+			training SO-SVM with regularization 0.050000
+			        on fold 0 Elapsed: training took 665.725793123
+					Elapsed: prediction took 0.292063951492
+					89.84%
+					                89.84   1s: ( 1821,  1737)      0s: ( 3179,  3263)
+	        on fold 1 Elapsed: training took 677.29476285
+			Elapsed: prediction took 0.145734071732
+			90.94%
+			                90.94   1s: ( 1811,  2036)      0s: ( 3189,  2964)
+	        on fold 2 Elapsed: training took 597.25584197
+			Elapsed: prediction took 0.141885995865
+			92.38%
+			                92.38   1s: ( 1977,  1810)      0s: ( 3023,  3190)
+	        on fold 3 Elapsed: training took 686.911827087
+			Elapsed: prediction took 0.151853084564
+			89.04%
+			                89.04   1s: ( 1840,  1866)      0s: ( 3160,  3134)
+	        on fold 4 Elapsed: training took 649.753741026
+			Elapsed: prediction took 0.149322032928
+			90.54%
+			                90.54   1s: ( 1880,  1795)      0s: ( 3120,  3205)
+	        overall success rate of 90.548%
+			training SO-SVM with regularization 0.005000
+			        on fold 0 Elapsed: training took 723.75158596
+					Elapsed: prediction took 0.154017925262
+					89.82%
+					                89.82   1s: ( 1821,  1736)      0s: ( 3179,  3264)
+	        on fold 1 Elapsed: training took 495.237694025
+			Elapsed: prediction took 0.156605005264
+			90.34%
+			                90.34   1s: ( 1811,  2044)      0s: ( 3189,  2956)
+	        on fold 2 Elapsed: training took 5098.99445915
+			Elapsed: prediction took 0.170624017715
+			91.92%
+			                91.92   1s: ( 1977,  1779)      0s: ( 3023,  3221)
+	        on fold 3 Elapsed: training took 922.249366045
+			Elapsed: prediction took 0.148754835129
+			88.52%
+			                88.52   1s: ( 1840,  1868)      0s: ( 3160,  3132)
+	        on fold 4 Elapsed: training took 642.950114012
+			Elapsed: prediction took 0.163815021515
+			90.48%
+			                90.48   1s: ( 1880,  1850)      0s: ( 3120,  3150)
+	        overall success rate of 90.216%
+			>>>> data with 30% of total labels distorted
+			training SO-SVM with regularization 500.000000
+			        on fold 0 Elapsed: training took 105.926935911
+					Elapsed: prediction took 0.147248983383
+					55.42%
+					                55.42   1s: ( 2229,     0)      0s: ( 2771,  5000)
+	        on fold 1 Elapsed: training took 126.684397936
+			Elapsed: prediction took 0.139790058136
+			59.58%
+			                59.58   1s: ( 2021,     0)      0s: ( 2979,  5000)
+	        on fold 2 Elapsed: training took 120.256431103
+			Elapsed: prediction took 0.151997089386
+			65.6%
+			                65.60   1s: ( 1720,     0)      0s: ( 3280,  5000)
+	        on fold 3 Elapsed: training took 105.335000038
+			Elapsed: prediction took 0.143939971924
+			67.0%
+			                67.00   1s: ( 1650,     0)      0s: ( 3350,  5000)
+	        on fold 4 Elapsed: training took 139.278898954
+			Elapsed: prediction took 0.141802072525
+			56.3%
+			                56.30   1s: ( 2185,     0)      0s: ( 2815,  5000)
+	        overall success rate of 60.78%
+			training SO-SVM with regularization 50.000000
+			        on fold 0 Elapsed: training took 180.534388065
+					Elapsed: prediction took 0.142873048782
+					75.74%
+					                75.74   1s: ( 2229,  1560)      0s: ( 2771,  3440)
+	        on fold 1 Elapsed: training took 161.159013987
+			Elapsed: prediction took 0.161149978638
+			76.6%
+			                76.60   1s: ( 2021,  1491)      0s: ( 2979,  3509)
+	        on fold 2 Elapsed: training took 263.352121115
+			Elapsed: prediction took 0.15620803833
+			80.02%
+			                80.02   1s: ( 1720,  1275)      0s: ( 3280,  3725)
+	        on fold 3 Elapsed: training took 194.596571922
+			Elapsed: prediction took 0.152634859085
+			83.08%
+			                83.08   1s: ( 1650,  1164)      0s: ( 3350,  3836)
+	        on fold 4 Elapsed: training took 168.076283932
+			Elapsed: prediction took 0.148622989655
+			75.68%
+			                75.68   1s: ( 2185,  1551)      0s: ( 2815,  3449)
+	        overall success rate of 78.224%
+			training SO-SVM with regularization 5.000000
+			        on fold 0 Elapsed: training took 297.487072945
+					Elapsed: prediction took 0.155323982239
+					84.54%
+					                84.54   1s: ( 2229,  2230)      0s: ( 2771,  2770)
+	        on fold 1 Elapsed: training took 446.617918015
+			Elapsed: prediction took 0.160037994385
+			83.92%
+			                83.92   1s: ( 2021,  1915)      0s: ( 2979,  3085)
+	        on fold 2 Elapsed: training took 374.005204916
+			Elapsed: prediction took 0.144192934036
+			85.86%
+			                85.86   1s: ( 1720,  1737)      0s: ( 3280,  3263)
+	        on fold 3 Elapsed: training took 369.149568796
+			Elapsed: prediction took 0.143201112747
+			84.68%
+			                84.68   1s: ( 1650,  1382)      0s: ( 3350,  3618)
+	        on fold 4 Elapsed: training took 322.899535894
+			Elapsed: prediction took 0.149640083313
+			81.44%
+			                81.44   1s: ( 2185,  2035)      0s: ( 2815,  2965)
+	        overall success rate of 84.088%
+			training SO-SVM with regularization 0.500000
+			        on fold 0 Elapsed: training took 486.549154043
+					Elapsed: prediction took 0.144995927811
+					84.26%
+					                84.26   1s: ( 2229,  2280)      0s: ( 2771,  2720)
+	        on fold 1 Elapsed: training took 572.259454012
+			Elapsed: prediction took 0.168390989304
+			86.72%
+			                86.72   1s: ( 2021,  2043)      0s: ( 2979,  2957)
+	        on fold 2 Elapsed: training took 586.494595051
+			Elapsed: prediction took 0.191714048386
+			85.3%
+			                85.30   1s: ( 1720,  1661)      0s: ( 3280,  3339)
+	        on fold 3 Elapsed: training took 470.496173859
+			Elapsed: prediction took 0.172119855881
+			85.6%
+			                85.60   1s: ( 1650,  1450)      0s: ( 3350,  3550)
+	        on fold 4 Elapsed: training took 820.778609991
+			Elapsed: prediction took 0.157320976257
+			84.16%
+			                84.16   1s: ( 2185,  2061)      0s: ( 2815,  2939)
+	        overall success rate of 85.208%
+			training SO-SVM with regularization 0.050000
+			        on fold 0 Elapsed: training took 437.61571312
+					Elapsed: prediction took 0.170977830887
+					85.56%
+					                85.56   1s: ( 2229,  2297)      0s: ( 2771,  2703)
+	        on fold 1 Elapsed: training took 542.186182022
+			Elapsed: prediction took 0.157390832901
+			86.8%
+			                86.80   1s: ( 2021,  2099)      0s: ( 2979,  2901)
+	        on fold 2 Elapsed: training took 661.275405884
+			Elapsed: prediction took 0.184031009674
+			85.04%
+			                85.04   1s: ( 1720,  1726)      0s: ( 3280,  3274)
+	        on fold 3 Elapsed: training took 679.400310993
+			Elapsed: prediction took 0.15961098671
+			85.7%
+			                85.70   1s: ( 1650,  1449)      0s: ( 3350,  3551)
+	        on fold 4 Elapsed: training took 696.350537062
+			Elapsed: prediction took 0.174418926239
+			83.18%
+			                83.18   1s: ( 2185,  2120)      0s: ( 2815,  2880)
+	        overall success rate of 85.256%
+			training SO-SVM with regularization 0.005000
+			        on fold 0 Elapsed: training took 578.507041931
+					Elapsed: prediction took 0.209383964539
+					85.24%
+					                85.24   1s: ( 2229,  2317)      0s: ( 2771,  2683)
+	        on fold 1 Elapsed: training took 886.201483965
+			Elapsed: prediction took 0.170296907425
+			87.86%
+			                87.86   1s: ( 2021,  2056)      0s: ( 2979,  2944)
+	        on fold 2 Elapsed: training took 754.809774876
+			Elapsed: prediction took 0.166913986206
+			85.78%
+			                85.78   1s: ( 1720,  1725)      0s: ( 3280,  3275)
+	        on fold 3 Elapsed: training took 854.921461105
+			Elapsed: prediction took 0.152403116226
+			85.72%
+			                85.72   1s: ( 1650,  1450)      0s: ( 3350,  3550)
+	        on fold 4 Elapsed: training took 917.182985067
+			Elapsed: prediction took 0.147148132324
+			84.68%
+			                84.68   1s: ( 2185,  2089)      0s: ( 2815,  2911)
+	        overall success rate of 85.856%
+			>>>> data with 40% of total labels distorted
+			training SO-SVM with regularization 500.000000
+			        on fold 0 Elapsed: training took 117.306088924
+					Elapsed: prediction took 0.153350114822
+					60.1%
+					                60.10   1s: ( 1995,     0)      0s: ( 3005,  5000)
+	        on fold 1 Elapsed: training took 83.2719471455
+			Elapsed: prediction took 0.152892112732
+			66.8%
+			                66.80   1s: ( 1660,     0)      0s: ( 3340,  5000)
+	        on fold 2 Elapsed: training took 157.674941063
+			Elapsed: prediction took 0.155144929886
+			48.02%
+			                48.02   1s: ( 2599,     0)      0s: ( 2401,  5000)
+	        on fold 3 Elapsed: training took 121.03242588
+			Elapsed: prediction took 0.160848855972
+			64.26%
+			                64.26   1s: ( 1787,     0)      0s: ( 3213,  5000)
+	        on fold 4 Elapsed: training took 162.766410828
+			Elapsed: prediction took 0.158216953278
+			55.38%
+			                55.38   1s: ( 2231,     0)      0s: ( 2769,  5000)
+	        overall success rate of 58.912%
+			training SO-SVM with regularization 50.000000
+			        on fold 0 Elapsed: training took 177.403254032
+					Elapsed: prediction took 0.157146930695
+					60.06%
+					                60.06   1s: ( 1995,     2)      0s: ( 3005,  4998)
+	        on fold 1 Elapsed: training took 164.712234974
+			Elapsed: prediction took 0.259703874588
+			65.78%
+			                65.78   1s: ( 1660,    85)      0s: ( 3340,  4915)
+	        on fold 2 Elapsed: training took 157.663363934
+			Elapsed: prediction took 0.168230056763
+			48.02%
+			                48.02   1s: ( 2599,     0)      0s: ( 2401,  5000)
+	        on fold 3 Elapsed: training took 203.254787922
+			Elapsed: prediction took 0.150547027588
+			64.18%
+			                64.18   1s: ( 1787,     4)      0s: ( 3213,  4996)
+	        on fold 4 Elapsed: training took 188.407625914
+			Elapsed: prediction took 0.1595890522
+			55.38%
+			                55.38   1s: ( 2231,     0)      0s: ( 2769,  5000)
+	        overall success rate of 58.684%
+			training SO-SVM with regularization 5.000000
+			        on fold 0 Elapsed: training took 361.129966021
+					Elapsed: prediction took 0.173491001129
+					66.16%
+					                66.16   1s: ( 1995,  1233)      0s: ( 3005,  3767)
+	        on fold 1 Elapsed: training took 286.875699997
+			Elapsed: prediction took 0.145905971527
+			69.38%
+			                69.38   1s: ( 1660,  1407)      0s: ( 3340,  3593)
+	        on fold 2 Elapsed: training took 304.102404118
+			Elapsed: prediction took 0.184801101685
+			58.06%
+			                58.06   1s: ( 2599,   900)      0s: ( 2401,  4100)
+	        on fold 3 Elapsed: training took 409.630359888
+			Elapsed: prediction took 0.15766119957
+			73.42%
+			                73.42   1s: ( 1787,  1264)      0s: ( 3213,  3736)
+	        on fold 4 Elapsed: training took 262.375255823
+			Elapsed: prediction took 0.15697312355
+			66.08%
+			                66.08   1s: ( 2231,  1127)      0s: ( 2769,  3873)
+	        overall success rate of 66.62%
+			training SO-SVM with regularization 0.500000
+			        on fold 0 Elapsed: training took 530.216527224
+					Elapsed: prediction took 0.166176080704
+					68.98%
+					                68.98   1s: ( 1995,  1766)      0s: ( 3005,  3234)
+	        on fold 1 Elapsed: training took 459.35513401
+			Elapsed: prediction took 0.167690992355
+			73.2%
+			                73.20   1s: ( 1660,  1634)      0s: ( 3340,  3366)
+	        on fold 2 Elapsed: training took 479.175002098
+			Elapsed: prediction took 0.165230989456
+			62.3%
+			                62.30   1s: ( 2599,  1336)      0s: ( 2401,  3664)
+	        on fold 3 Elapsed: training took 432.376527786
+			Elapsed: prediction took 0.162461042404
+			76.86%
+			                76.86   1s: ( 1787,  1670)      0s: ( 3213,  3330)
+	        on fold 4 Elapsed: training took 542.346670866
+			Elapsed: prediction took 0.176906108856
+			68.32%
+			                68.32   1s: ( 2231,  1515)      0s: ( 2769,  3485)
+	        overall success rate of 69.932%
+			training SO-SVM with regularization 0.050000
+			        on fold 0 Elapsed: training took 767.021513939
+					Elapsed: prediction took 0.160974025726
+					68.42%
+					                68.42   1s: ( 1995,  1772)      0s: ( 3005,  3228)
+	        on fold 1 Elapsed: training took 590.785492897
+			Elapsed: prediction took 0.259429931641
+			70.72%
+			                70.72   1s: ( 1660,  1722)      0s: ( 3340,  3278)
+	        on fold 2 Elapsed: training took 805.58406496
+			Elapsed: prediction took 0.251227140427
+			62.8%
+			                62.80   1s: ( 2599,  1315)      0s: ( 2401,  3685)
+	        on fold 3 Elapsed: training took 797.089339972
+			Elapsed: prediction took 0.167633056641
+			76.14%
+			                76.14   1s: ( 1787,  1872)      0s: ( 3213,  3128)
+	        on fold 4 Elapsed: training took 764.922811985
+			Elapsed: prediction took 0.154428958893
+			68.74%
+			                68.74   1s: ( 2231,  1464)      0s: ( 2769,  3536)
+	        overall success rate of 69.364%
+			training SO-SVM with regularization 0.005000
+			        on fold 0 Elapsed: training took 5090.64134812
+					Elapsed: prediction took 0.145127058029
+					69.78%
+					                69.78   1s: ( 1995,  1894)      0s: ( 3005,  3106)
+	        on fold 1 Elapsed: training took 419.275894165
+			Elapsed: prediction took 0.139637947083
+			71.02%
+			                71.02   1s: ( 1660,  1749)      0s: ( 3340,  3251)
+	        on fold 2 Elapsed: training took 700.89460206
+			Elapsed: prediction took 0.144002914429
+			63.08%
+			                63.08   1s: ( 2599,  1295)      0s: ( 2401,  3705)
+	        on fold 3 Elapsed: training took 592.093777895
+			Elapsed: prediction took 0.139694929123
+			75.0%
+			                75.00   1s: ( 1787,  1825)      0s: ( 3213,  3175)
+	        on fold 4 Elapsed: training took 717.601636887
+			Elapsed: prediction took 0.146666049957
+			69.38%
+			                69.38   1s: ( 2231,  1538)      0s: ( 2769,  3462)
