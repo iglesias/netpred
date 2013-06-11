@@ -19,10 +19,12 @@ for SSVMs present in Shogun.
 Apart from Shogun dependencies, you need cvxopt for the linear programming
 relaxation used to solve the argmax.
 
-Contents
-========
+Report
+======
 
-- The directory report contains two copies of my undergrad thesis. [This
-version](report/fjig_pfc_bw.pdf) is more appropriate for black & white printing
+You can get a copy to my final degree project (PFC in Spanish) report here.
+[This version](https://dl.dropboxusercontent.com/u/11020840/pfc/fjig_pfc_bw.pdf)
+is more appropriate for black & white printing
 since the cross-links in the document are black. If you just want to read it
-using a computer or similar, use this other [version](report/fjig_pfc.pdf) better.
+using a computer or similar, use beter this other
+[version](https://dl.dropboxusercontent.com/u/11020840/pfc/fjig_pfc.pdf).
