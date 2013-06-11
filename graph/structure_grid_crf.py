@@ -267,7 +267,7 @@ n_features = 3 # has to matched with the one used by toy.generate_*
 # Number of possible values that each node may take
 n_states = 3 # has to matched with the one used by toy.generate_*
 # Noise level
-noise = 0.7
+noise = 0.1
 
 if len(sys.argv)>2 and sys.argv[2]=='load':
 	import pickle
