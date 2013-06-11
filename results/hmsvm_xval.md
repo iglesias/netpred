@@ -1,5 +1,5 @@
-Cross-validation error
-======================
+Cross-validation accuracy 
+=========================
 
 Along the rows varies the regularization strength, and along the columns the proportion of distorted
 labels.
