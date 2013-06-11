@@ -35,11 +35,11 @@ model.set_use_plifs(True)
 
 loss = HingeLoss()
 
-# regularizer chosen performing cross-validation
-regularizer = 5.0
+# regularization chosen performing cross-validation
+regularization = 5.0
 
 sosvm = PrimalMosekSOSVM(model, loss, train_labels)
-sosvm.set_regularizer(5)
+sosvm.set_regularization(5)
 sosvm.train()
 prediction = sosvm.apply()
 accuracy = evaluator.evaluate(prediction, train_labels)

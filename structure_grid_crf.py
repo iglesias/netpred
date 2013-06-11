@@ -42,7 +42,7 @@ class GridCRFStructuredModel(DirectorStructuredModel):
 	def get_dim(self):
 		return self.dim
 
-	def init_opt(self, regularizer, A, a, B, b, lb, ub, C):
+	def init_opt(self, regularization, A, a, B, b, lb, ub, C):
 		# Magic value - it would be nicer to apply cross-validation
 		C = 0.01*np.eye(self.dim)
 

@@ -125,11 +125,11 @@ loss = HingeLoss()
 evaluator = StructuredAccuracy()
 
 # regularization values
-regularizers = [500, 50, 5, 0.5, 0.05]
+regularizations = [500, 50, 5, 0.5, 0.05]
 
 W = []
 
-for reg in regularizers:
+for reg in regularizations:
 	print 'training SO-SVM with regularization %.2f' % reg
 	accuracies = []
 	w = []
@@ -137,7 +137,7 @@ for reg in regularizers:
 		model = HMSVMModel(features_no_fold[k], labels_no_fold[k], SMT_TWO_STATE)
 		model.set_use_plifs(True)
 		sosvm = PrimalMosekSOSVM(model, loss, labels_no_fold[k])
-		sosvm.set_regularizer(reg)
+		sosvm.set_regularization(reg)
 		print '\ton fold %d' % k,
 		sosvm.io.set_loglevel(MSG_DEBUG)
 		t0 = time.time()
