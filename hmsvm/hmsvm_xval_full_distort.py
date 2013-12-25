@@ -1,29 +1,20 @@
 #!/usr/bin/env python
 
-from shogun.Structure	import TwoStateModel, HMSVMModel, SMT_TWO_STATE, DualLibQPBMSOSVM, Sequence
-from shogun.Structure	import SequenceLabels
-from shogun.Loss		import HingeLoss
-from shogun.Features	import RealMatrixFeatures
-from shogun.Evaluation	import StructuredAccuracy
-from modshogun			import MSG_DEBUG
+from modshogun import *
 
-import numpy
-import scipy.io
-import pickle
-import utils
-import time
+import numpy, scipy.io, pickle, utils, time
 
 try:
-	from shogun.Structure	import PrimalMosekSOSVM
+	dummy = PrimalMosekSOSVM()
 except ImportError:
 	print 'PirmalMosekSOSVM import failed, compile Shogun with Mosek support'
 	import sys
 	sys.exit(0)
 
-checks = False 
+checks = False
 
 # number of folds used for model selection
-K = 5 
+K = 5
 # number of examples per fold
 num_fold_examples = 20
 # length of each example

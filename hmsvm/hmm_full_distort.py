@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 
-import	utils
+import utils
 
-from mlhmm		import MLHMM
-
-from shogun.Evaluation	import StructuredAccuracy
-from shogun.Structure	import HMSVMModel, SMT_TWO_STATE
+from mlhmm import MLHMM
+from modshogun import StructuredAccuracy, HMSVMModel, SMT_TWO_STATE
 
 distorts = [0, 10, 20, 30, 40]
 evaluator = StructuredAccuracy()

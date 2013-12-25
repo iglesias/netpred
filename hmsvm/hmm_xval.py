@@ -1,17 +1,11 @@
 #!/usr/bin/env python
 
-import numpy
-import scipy
-import utils
+import numpy, scipy, utils
 
-from mlhmm  import MLHMM
-from scipy  import io
-from time   import time
-
-from shogun.Evaluation  import StructuredAccuracy
-from shogun.Features    import RealMatrixFeatures
-from shogun.Structure   import SequenceLabels, HMSVMModel, SMT_TWO_STATE
-from modshogun          import MSG_DEBUG
+from mlhmm import MLHMM
+from scipy import io
+from time import time
+from modshogun import * 
 
 ### prepare data
 

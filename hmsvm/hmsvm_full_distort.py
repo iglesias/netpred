@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 
-import	utils
+import utils
 
-from shogun.Evaluation	import StructuredAccuracy
-from shogun.Loss		import HingeLoss
-from shogun.Structure	import HMSVMModel, SMT_TWO_STATE, PrimalMosekSOSVM
+from modshogun import *
 
 distort = 40
 evaluator = StructuredAccuracy()

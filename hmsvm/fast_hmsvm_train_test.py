@@ -1,11 +1,8 @@
 #!/usr/bin/env python
 
-import	utils
+from modshogun import * 
+import utils
 
-from shogun.Evaluation	import StructuredAccuracy
-from shogun.Loss		import HingeLoss
-from shogun.Structure	import HMSVMModel, SMT_TWO_STATE, DualLibQPBMSOSVM
-from modshogun			import MSG_DEBUG
 
 ### prepare training, test data and evaluator
 

@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 
-from shogun.Structure	import TwoStateModel, HMSVMModel, SMT_TWO_STATE, DualLibQPBMSOSVM, Sequence
-from shogun.Structure	import SequenceLabels
-from shogun.Loss		import HingeLoss
-from shogun.Features	import RealMatrixFeatures
-from shogun.Evaluation	import StructuredAccuracy
-from modshogun			import MSG_DEBUG
+from modshogun import *
 
 import numpy
 import scipy.io

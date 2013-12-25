@@ -1,6 +1,4 @@
-from shogun.Features	import RealMatrixFeatures
-from shogun.Structure	import HMSVMModel, SMT_TWO_STATE, SequenceLabels, TwoStateModel, \
-								Sequence
+from modshogun import RealMatrixFeatures, HMSVMModel, SMT_TWO_STATE, SequenceLabels, TwoStateModel, Sequence
 
 import numpy
 

@@ -1,13 +1,11 @@
 #!/usr/bin/env python
 
-import	utils
+import utils
 import numpy
 
-from mlhmm		import MLHMM
-from itertools	import product
-
-from shogun.Evaluation	import StructuredAccuracy
-from shogun.Structure	import HMSVMModel, SMT_TWO_STATE
+from mlhmm import MLHMM
+from itertools import product
+from modshogun import StructuredAccuracy, HMSVMModel, SMT_TWO_STATE
 
 ### prepare training, test data and evaluator
 
