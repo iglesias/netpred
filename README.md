@@ -38,7 +38,7 @@ since the cross-links in the document are black. If you just want to read it
 using a computer or similar, use beter this other
 [version](https://dl.dropboxusercontent.com/u/11020840/pfc/fjig_pfc.pdf).
 
-[Slides](https://www.dropbox.com/s/a0bolzzxgr669sg/fjig_pfc_slides.pdf)
-in Spanish for the presentation. I plan to prepare something similar
-in English soon for a workshop taking place in a few weeks. I will upload then
-the source code as well.
+[Slides](https://dl.dropboxusercontent.com/u/11020840/fjig_pfc_slides.pdf)
+in Spanish for the presentation. [Slides](https://dl.dropboxusercontent.com/u/11020840/fjig_shogun_slides.pdf) in English for a similar presentation
+during the Shogun Workshop 2013. [Video of the presentation](https://www.youtube.com/watch?v=Ti_Wivo9OWY)
+in the workshop.
