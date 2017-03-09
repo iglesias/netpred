@@ -1,5 +1,5 @@
-linal
-=====
+netpred
+=======
 
 Structured SVMs applied to label sequence learning (the so-called HM-SVM) and
 graph learning (or grid CRFs in particular). I am using
