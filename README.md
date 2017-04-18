@@ -28,14 +28,8 @@ sequence learning as well.
 Apart from Shogun dependencies, you need cvxopt for the linear programming
 relaxation used to solve the argmax in graph learning.
 
-Report
-======
+Report and presentation
+=======================
 
-You can get a copy of my final degree project (PFC in Spanish) report here.
-[This version](https://dl.dropboxusercontent.com/u/11020840/pfc/fjig_pfc_bw.pdf)
-is more appropriate for black & white printing
-since the cross-links in the document are black. If you just want to read it
-using a computer or similar, use beter this other
-[version](https://dl.dropboxusercontent.com/u/11020840/pfc/fjig_pfc.pdf).
-
-[Slides](https://dl.dropboxusercontent.com/u/11020840/fjig_shogun_slides.pdf) and [video](https://www.youtube.com/watch?v=Ti_Wivo9OWY) of a presentation during the Shogun Workshop 2013.
+Feel free to reach out if you would like to read my final degree project (PFC in Spanish) report.
+[Video](https://www.youtube.com/watch?v=Ti_Wivo9OWY) of a presentation during the Shogun Workshop 2013.
