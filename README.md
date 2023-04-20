@@ -9,7 +9,7 @@ by Andreas Mueller for the graph learning part. The HM-SVM implementation in
 Shogun I am using here is based on the Matlab code by Gunnar Raetsch and Georg
 Zeller [available at mloss](http://mloss.org/software/tags/hmsvm/). The code
 makes use of [Shogun](http://shogun-toolbox.org)'s structured learning framework
-([+ info](http://iglesiashogun.wordpress.com/)).
+([+ info](https://iglesiashogun.wordpress.com/2012/05/22/first-weekly-report-gsoc-2012/)).
 
 Requirements
 ============
